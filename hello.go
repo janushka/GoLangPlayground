@@ -1,4 +1,4 @@
-// Echo3 prints its command-line arguments.
+/*
 package main
 
 import (
@@ -32,10 +32,11 @@ func main() {
 func countLines(f *os.File, counts map[string]int) {
 	input := bufio.NewScanner(f)
 	for input.Scan() {
-		counts[input.Text()]++
+		counts[f.Name() + " - " + input.Text()]++
 	}
 	// NOTE: ignoring potential errors from input.Err()
 }
 
 
 
+*/
